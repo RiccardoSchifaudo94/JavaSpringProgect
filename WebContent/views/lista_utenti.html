@@ -1,0 +1,53 @@
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="jumbotron">
+		  <div class="panel panel-primary">
+			    <div class="panel-heading">Lista utenti</div>
+			    <div class="panel-body table-responsive">
+			   	 <table class="table table-condensed table-striped">
+					    <tr>
+					        <th width="100">ID:</th>
+					        <td><input class="form-control" type="text" id="id" ng-model="user.id" /></td>
+					    </tr>
+					    <tr>
+					        <th width="100">Name:</th>
+					        <td><input class="form-control" type="text" id="name" ng-model="user.name" /></td>
+					    </tr>
+					    <tr>
+					        <th width="100">Age:</th>
+					        <td><input class="form-control" type="text" id="age" ng-model="user.email" /></td>
+					    </tr>
+					</table>
+					</div>
+				</div>			
+			  <hr>
+			  <div class="panel panel-primary">
+			    <div class="panel-heading">Lista utenti</div>
+			    <div class="panel-body table-responsive">
+			    	<table class="table table-condensed table-striped">
+			    		<thead>
+			    			<tr>
+			    				<th>Nome</th>
+			    				<th>Cognome</th>
+			    				<th>Ruolo</th>
+			    			</tr>
+			    		</thead>
+			    		<tbody>
+			    			<tr ng-repeat="user in utenti">
+			    				<td>{{user.name}}</td>
+			    				<td>{{user.surname}}</td>
+			    				<td>{{user.role}}</td>
+			    				<td>
+			    					<a ng-click="getUser(user.id)">Get User</a>
+									<a ng-click="updateUser(user.id,user.name,user.email)">Update User</a>
+									<a ng-click="addUser(user.name,user.email)">Add User</a>
+									<a ng-click="deleteUser(user.id)">Delete User</a>
+								</td>
+							</tr>
+			    		</tbody>
+			    	</table>
+			    </div>
+			  </div>
+		</div>
+	</div>
+</div>

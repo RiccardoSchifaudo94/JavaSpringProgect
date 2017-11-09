@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="jumbotron">
+			<h3>Contatti</h3>
+			<label>Nome</label>
+			<input type="text" ng-model="nome" class="form-control">
+			<label>Cognome</label>
+			<input type="text" ng-model="cognome" class="form-control">
+			<label>Email</label>
+			<input type="text" ng-model="email" class="form-control">
+			<label>Messaggio</label>
+			<textarea ng-model="messaggio" class="form-control" rows="10"></textarea>
+			<br>
+			<button class="btn btn-primary">Invia messaggio</button>
+			<div class="alert alert-success fade in alert-dismissable" style="margin-top:18px;">
+		    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close" ng-show="status">×</a>
+			    <strong>Success!</strong> Grazie per il tuo messaggio! Ti ricontatteremo a breve!
+			</div>
+		</div>
+	</div>
+</div>

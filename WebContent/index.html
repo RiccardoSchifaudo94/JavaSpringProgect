@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Angular Java App</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="myApp">
+	<!--  navbar  -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a ui-sref="home">Home</a></li>
+	      <li><a ui-sref="about">About</a></li>
+	      <li><a ui-sref="contatti">Contatti</a></li>
+	      <li><a ui-sref="registra">Registrati</a></li>
+	      <li><a ui-sref="lista_utenti">Lista Utenti</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<!--  body  -->
+	<div class="container">
+		<div ui-view></div>
+	</div>
+	<!--  libraries  -->
+	<script src="lib/jquery.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-route.min.js"></script>
+	<!--  app  -->
+	<script src="js/app.js"></script>
+	
+	<!--  services  -->
+	<script src="js/services/listaUtentiService.js"></script>s
+	
+	<!--  controllers  -->
+	<script src="js/controllers/homeController.js"></script>
+	<script src="js/controllers/registraController.js"></script>
+	<script src="js/controllers/contattiController.js"></script>
+	<script src="js/controllers/listaUtentiController.js"></script>
+	
+</body>
+</html>
